@@ -2,7 +2,7 @@
 This is the multi-line comment
 It can hold several line
 """
-# This is the signle line comment
+# This is the single line comment
 
 name_with_single_quotes = 'boot.dev' # not so good
 name_with_double_quotes = "boot.dev" # so good
@@ -20,7 +20,7 @@ is_tall = True
 is_short = False
 
 #f"String"
-fString = f"This is fString"
+fString = f"This is fString "
 
 print(fString + f"Number x = {x} \nFloat num is {fx} \nThe boolean var is {is_tall}")
 
@@ -30,7 +30,7 @@ my_test = None
 #To accept input from the user - inpur("Text to be displayed ")
 name = None
 # name = input("Enter your name: ")
-if name == None:
+if name is None:
     name = "Adi"
 print(f"Username is {name}")
 
@@ -43,7 +43,7 @@ is_car = True
 print(f"The type of is_car is: {type(is_car)}")
 """
 type(<variable>) funcation which return the type of the datatype
-type(<variable>)__name__ funcation which returns the exect name of data type
+type(<variable>).__name__ funcation which returns the exect name of data type
 """
 
 def area_of_circle(radius):
