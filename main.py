@@ -136,3 +136,96 @@ def get_greeting(email, name="there"):
     print("Hello", name, "welcome! You've registered your email:", email)
 
 print("="*20)
+
+
+#Floor division x // y
+"""This results in the lowest whole nu. then the value"""
+temp_result = 7 // 3 #Result is 2
+temp_result = -7 // 3 #Result in -3
+
+#Exponents are 3**2 :- 3^2
+
+"""
+Scientific notation:
+print(16e3) :- 16000.0
+print(7.1e-2) :- 0.071
+
+For redablity num = 16_000
+"""
+
+#print(True or False or False) is equal to print((True and notFalse) or False)
+
+
+#print(0b0101) we can input the binary number by using a prifix 0b in begning
+
+"""
+bitwise & and |
+
+0b0101 & 0b0111 results in 5
+"""
+
+#Converting the binary string into the number using int(<binary string>, <number sys base>)
+"""
+# this is a binary string
+binary_string = "100"
+
+# convert binary string to integer
+num = int(binary_string, 2)
+print(num)
+# 4
+"""
+print("="*20)
+
+def binary_string_to_int(inputer):
+    print(inputer) 
+
+# data_a, data_b, data_c = 
+binary_string_to_int("100", "101", "110")
+print(data_a)
+# 4
+print(data_b)
+# 5
+print(data_c)
+# 6
+
+### Once you are done with the DSA come back to this topic
+"""
+def binary_string_to_int(*binary_strings):
+  
+  #Converts any number of binary strings to their integer equivalents.
+  
+  # Use a list comprehension to convert each binary string to an integer
+  # int(string, 2) tells Python to interpret the string as a base-2 (binary) number
+  return [int(b_string, 2) for b_string in binary_strings]
+
+# --- Example with 3 inputs ---
+data_a, data_b, data_c = binary_string_to_int("100", "101", "110")
+
+print(f"data_a is: {data_a}")
+# Expected output: data_a is: 4
+print(f"data_b is: {data_b}")
+# Expected output: data_b is: 5
+print(f"data_c is: {data_c}")
+# Expected output: data_c is: 6
+
+print("-" * 20) # A separator for clarity
+
+# --- Example with 5 inputs ---
+results = binary_string_to_int("1", "10", "11", "1000", "10001")
+print(f"Results for 5 inputs: {results}")
+# Expected output: Results for 5 inputs: [1, 2, 3, 8, 17]
+"""
+
+#if you want true or false as the answer of the express then better not to use it,
+"""
+is_equal = 5 == 5
+# is_equal is True
+
+"""
+
+if score > high_score:
+    print("High score beat!")
+elif score > secord_hight_score:
+    print("You got second place!")
+elif score > third_highest_score:
+    print("")
