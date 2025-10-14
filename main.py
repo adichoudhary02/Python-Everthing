@@ -179,8 +179,7 @@ print("="*20)
 def binary_string_to_int(inputer):
     print(inputer) 
 
-# data_a, data_b, data_c = 
-binary_string_to_int("100", "101", "110")
+data_a, data_b, data_c = binary_string_to_int("100", "101", "110")
 print(data_a)
 # 4
 print(data_b)
@@ -222,10 +221,30 @@ is_equal = 5 == 5
 # is_equal is True
 
 """
-
+# Structure for the elif
 if score > high_score:
     print("High score beat!")
 elif score > secord_hight_score:
     print("You got second place!")
 elif score > third_highest_score:
     print("")
+
+#For structure
+
+for i in range(0, 10):
+    print(i)
+"""
+for <variable> in range(<start>, <end>, <steps>):
+    <body>
+"""
+
+
+#Range in for 
+for i in range(0, 10, 2):
+    print(i)
+# prints:
+# 0
+# 2
+# 4
+# 6
+# 8
