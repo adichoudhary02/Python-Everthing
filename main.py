@@ -248,3 +248,32 @@ for i in range(0, 10, 2):
 # 4
 # 6
 # 8
+
+# While Structure
+num = 0
+while num < 3:
+    num += 1
+    print(num)
+
+# prints:
+# 1
+# 2
+# 3
+# (the loop stops when num >= 3)
+
+#Continue Statement in Python 
+numbers = [16, -4, 25, -9, 36, 0, 49]
+
+for number in numbers:
+    if number < 0:
+        continue  # Skip negatives to avoid complex numbers
+
+    print(f"The square root of {number} is {number ** 0.5}.")
+
+# Break statement stop the loop and get out of the block
+
+for n in range(42):
+    print(f"{n} * {n} = {n * n}")
+    if n * n > 150:
+        break
+
