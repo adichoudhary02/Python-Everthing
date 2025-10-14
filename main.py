@@ -222,6 +222,7 @@ is_equal = 5 == 5
 
 """
 # Structure for the elif
+score, high_score, secord_hight_score, third_highest_score = 0, 0, 0, 0
 if score > high_score:
     print("High score beat!")
 elif score > secord_hight_score:
@@ -277,3 +278,105 @@ for n in range(42):
     if n * n > 150:
         break
 
+
+
+#List in Python 
+
+inventory = ["Iron Breastplate", "Healing Potion", "Leather Scraps"]
+
+player_ages = [
+    23,
+    18,
+    31,
+    42
+]
+
+#indexing in python
+
+best_languages = ["JavaScript", "Go", "Rust", "Python", "C"]
+print(best_languages[1])
+# prints "Go", because index 1 was provided
+
+#length of the List
+fruits = ["apple", "banana", "pear"]
+length = len(fruits)
+# 3
+
+#Updating the item in the list
+inventory = ["Leather", "Iron Ore", "Healing Potion"]
+inventory[0] = "Leather Armor"
+# inventory: ['Leather Armor', 'Iron Ore', 'Healing Potion']
+
+#Adding the item to the end of the list using the .append() fxn
+cards = []
+cards.append("nvidia")
+cards.append("amd")
+# the cards list is now ['nvidia', 'amd']
+
+#removing and returning the last item of the list using .pop()
+vegetables = ["broccoli", "cabbage", "kale", "tomato"]
+last_vegetable = vegetables.pop()
+# vegetables = ['broccoli', 'cabbage', 'kale']
+# last_vegetable = 'tomato'
+
+#Using for to print all the items of the list using iteration
+sports = ["Football", "Hockey", "Bat", "Halmet"]
+for i in range(0, len(sports)):
+    print(sports[i])
+
+#printing the items of the list without using the iteration
+trees = ['oak', 'pine', 'maple']
+for tree in trees:
+    print(tree)
+
+#infinity in Python 
+negative_infinity = float("-inf")
+positive_infinity = float("inf")
+
+#Slicing Lists in python
+# my_list[ start : stop : step ]
+
+scores = [50, 70, 30, 20, 90, 10, 50]
+# Display list
+print(scores[1:5:2])
+# Prints [70, 20]
+
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers[:3] # Gives [0, 1, 2]
+numbers[3:] # Gives [3, 4, 5, 6, 7, 8, 9]
+
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers[::2] # Gives [0, 2, 4, 6, 8]
+
+#Concatinating the two lists 
+total = [1, 2, 3] + [4, 5, 6]
+print(total)
+# Prints: [1, 2, 3, 4, 5, 6]
+
+#Checking if the list contains the item
+fruits = ["apple", "orange", "banana"]
+print("banana" in fruits)
+# Prints: True
+
+fruits = ["apple", "orange", "banana"]
+print("banana" not in fruits)
+# Prints: False
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# delete the fourth item
+del nums[3]
+print(nums)
+# Output: [1, 2, 3, 5, 6, 7, 8, 9]
+
+# delete the second item up to (but not including) the fourth item
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+del nums[1:3]
+print(nums)
+# Output: [1, 4, 5, 6, 7, 8, 9]
+
+# delete all elements
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+del nums[:]
+print(nums)
+# Output: []
