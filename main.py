@@ -565,3 +565,57 @@ fruits.add("pear")
 set1 = {"apple", "banana", "grape"}
 set2 = {"apple", "banana"}
 set3 = set1 - set2
+
+#Error Handling in Python 
+
+try:
+  10 / 0
+except Exception:
+  print("can't divide by zero")
+  
+#Raising the own error
+
+def craft_sword(metal_bar):
+    if metal_bar == "iron":
+        return "iron sword"
+    raise Exception("invalid metal bar")
+
+#Never Catch your own exception 
+
+# don't do this
+def craft_sword(metal_bar):
+    try:
+        if metal_bar == "bronze":
+            return "bronze sword"
+        if metal_bar == "iron":
+            return "iron sword"
+        if metal_bar == "steel":
+            return "steel sword"
+        raise Exception("invalid metal bar")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        
+# do this
+try:
+    craft_sword("gold bar")
+except Exception as e:
+    print(e)
+    
+#Types of the errors
+
+# do this
+try:
+    craft_sword("gold bar")
+except Exception as e:
+    print(e)
+    
+#Always handle the specific error first 
+
+try:
+    nums = [0, 1]
+    print(nums[2])
+except Exception:
+    print("An error occurred")
+except IndexError:
+    print("Index error")
+#Here the Exception error happens first and IndexError will never run    
