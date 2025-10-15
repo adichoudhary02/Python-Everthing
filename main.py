@@ -403,8 +403,51 @@ print(my_tuples[0][1]) # 45
 print(my_tuples[1][0]) # this is the second tuple in the list
 print(my_tuples[1][2]) # False
 
+#For tuples with just an single element we use comma 
+#so that it is not confused with the nomal barckers
+
+dog = ("Fido",)
+
 #Spliting the sentence in the list of words
 message = "hello there sam"
 words = message.split()
 print(words)
 # Prints: ["hello", "there", "sam"]
+
+
+#Accepting the variable inputs
+def binary_to_string(*inputs):
+    itemss = []
+    for input in inputs:
+        itemss.append(int(input, 2))
+    print(itemss)
+binary_to_string("1001", "10010", "1101")
+
+"""
+Argument Packing: The *inputs syntax gathers all three string arguments—
+"1001", "10010", and "1101"—and puts them into a tuple named inputs.
+Inside the function, inputs is equal to:
+("1001", "10010", "1101")
+"""
+
+#Tuples unpacking 
+dog = ("Fido", 4)
+dog_name, dog_age = dog
+print(dog_name)
+# Fido
+print(dog_age)
+# 4
+
+
+#Split the sentence into the words of lists .split()
+
+message = "hello there sam"
+words = message.split()
+print(words)
+# Prints: ["hello", "there", "sam"]
+
+#Join the list of words into a string .join()
+list_of_words = ["hello", "there", "sam"]
+sentence = " ".join(list_of_words)
+print(sentence)
+# Prints: "hello there sam"
