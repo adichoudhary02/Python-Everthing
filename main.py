@@ -543,3 +543,25 @@ for name in fruit_sizes:
 #accessing th enested dictonary using the key chaining
 outer_dictionary = {}
 outer_dictionary["outer_key"]["inner_key"]
+
+
+#Sets - Unordered and are always uniquee
+
+fruits = {"apple", "banana", "grape"}
+
+#Adding and removing values to the sets
+
+fruits.add("pear")
+
+fruits.remove("apple")
+
+#Creating the Empty sets
+
+fruits = set()
+fruits.add("pear")
+
+#Sets Subtraction
+
+set1 = {"apple", "banana", "grape"}
+set2 = {"apple", "banana"}
+set3 = set1 - set2
