@@ -380,3 +380,31 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 del nums[:]
 print(nums)
 # Output: []
+
+
+#Tuples- These are ordered and unchangeable
+
+my_tuple = ("this is a tuple", 45, True)
+print(my_tuple[0])
+# this is a tuple
+print(my_tuple[1])
+# 45
+print(my_tuple[2])
+# True
+
+#List in a tuple 
+
+my_tuples = [
+    ("this is the first tuple in the list", 45, True),
+    ("this is the second tuple in the list", 21, False)
+]
+print(my_tuples[0][0]) # this is the first tuple in the list
+print(my_tuples[0][1]) # 45
+print(my_tuples[1][0]) # this is the second tuple in the list
+print(my_tuples[1][2]) # False
+
+#Spliting the sentence in the list of words
+message = "hello there sam"
+words = message.split()
+print(words)
+# Prints: ["hello", "there", "sam"]
