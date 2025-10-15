@@ -451,3 +451,95 @@ list_of_words = ["hello", "there", "sam"]
 sentence = " ".join(list_of_words)
 print(sentence)
 # Prints: "hello there sam"
+
+#Dictonary the famous Key value pair
+
+# use curly braces
+# add key-value pairs
+car = {
+  "brand": "Toyota",
+  "model": "Camry",
+  "year": 2019,
+}
+
+#We can't have duplicate keys in the dictionary
+
+def get_character_record(name, server, level, rank):
+    return {
+        "name": name,
+        "server": server,
+        "level": level,
+        "rank": rank,
+        "id": f"{name}#{server}",#Cool away of using the fstring to create id.
+    }
+
+#Accessing dictonary 
+car = {
+    "make": "Toyota",
+    "model": "Camry"
+}
+print(car["make"])
+# Prints: Toyota
+
+#Setting values to the Dictonary keys
+
+planets = {}
+planets["Earth"] = True #This checks if the planets has Earth if not then adds it
+planets["Pluto"] = False
+print(planets["Pluto"])
+# Prints False
+
+planets["Pluto"] = True #Here it found Pluto already existed then it modified the Pluto's value
+print(planets["Pluto"])
+
+#Deleting the values in the dictonary
+
+names_dict = {
+    "jack": "bronson",
+    "jill": "mcarty",
+    "joe": "denver"
+}
+
+del names_dict["joe"]
+
+print(names_dict)
+# Prints: {'jack': 'bronson', 'jill': 'mcarty'}
+
+#Checking if the key exists in the dictonary
+if "jill" in names_dict:
+    del names_dict["jill"]
+    
+print(names_dict)
+# Prints: {'jack': 'bronson'}
+
+#Iterating over the dictonary
+fruit_sizes = {
+    "apple": "small",
+    "banana": "large",
+    "grape": "tiny"
+}
+
+for name in fruit_sizes:
+    print(f"name:{name}, size:{fruit_sizes[name]}")
+    
+    
+#Nested dictonary
+{
+    "entity": {
+        "character": {
+            "name": "Shallan",
+            "quests": {
+                "bridge_run": {
+                    "status": "Completed",
+                },
+                "talk_to_syl": {
+                    "status": "In Progress",
+                },
+            },
+        }
+    }
+}
+
+#accessing th enested dictonary using the key chaining
+outer_dictionary = {}
+outer_dictionary["outer_key"]["inner_key"]
