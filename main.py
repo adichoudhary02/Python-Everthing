@@ -619,3 +619,116 @@ except Exception:
 except IndexError:
     print("Index error")
 #Here the Exception error happens first and IndexError will never run    
+
+
+###Object Oriented Programing in Python...
+"""
+OBJECT ORIENTED PROGRAMING
+"""
+
+###Classs
+
+# Defines a new class called "Soldier"
+# with three properties: health, armor, damage
+class Soldier:
+    health = 5
+    armor = 3
+    damage = 2
+
+#classes are custom types that you define.
+
+health = 50
+# health is an instance of an integer type
+aragorn = Soldier()
+# aragorn is an instance of the Soldier class type
+
+class Archer:
+    health = 40
+    arrows = 10
+
+# Create several instances of the Archer class
+legolas = Archer()
+bard = Archer()
+
+# Print class properties
+print(legolas.health) # 40
+print(bard.arrows) # 10
+
+
+
+
+class Soldier:
+    health = 5
+
+    # This is a method that reduces the
+    # health of the soldier
+    def take_damage(self, damage):
+        self.health -= damage
+        return self.health
+    """Methods are defined within the class declaration.
+      Their first parameter "self" is always the instance of 
+      the class that the method is being called on. 
+    """
+
+soldier_one = Soldier()
+soldier_one.take_damage(2)
+print(soldier_one.health)
+# prints "3"
+
+soldier_two = Soldier()
+soldier_two.take_damage(1)
+print(soldier_two.health)
+# prints "4"
+
+
+
+class Soldier:
+    health = 100
+
+    def take_damage(self, damage, multiplier):
+        # "self" is dalinar in the first example
+        #
+        damage = damage * multiplier
+        self.health -= damage
+
+dalinar = Soldier()
+# "damage" and "multiplier" are passed explicitly as arguments
+# 20 and 2, respectively
+# "dalinar" is passed implicitly as the first argument, "self"
+dalinar.take_damage(20, 2)
+print(dalinar.health)
+# 60
+
+adolin = Soldier()
+# Again, "adolin" is passed implicitly as the first argument, "self"
+# "damage" and "multiplier" are passed explicitly as arguments
+adolin.take_damage(10, 3)
+print(adolin.health)
+# 70
+
+
+##We USe constructor to pass the values to the class vaiables
+
+class Soldier:
+    def __init__(self, name, armor, num_weapons):
+        self.name = name
+        self.armor = armor
+        self.num_weapons = num_weapons
+
+soldier_one = Soldier("Legolas", 2, 10)
+print(soldier_one.name)
+# prints "Legolas"
+print(soldier_one.armor)
+# prints "2"
+print(soldier_one.num_weapons)
+# prints "10"
+
+soldier_two = Soldier("Gimli", 5, 1)
+print(soldier_two.name)
+# prints "Gimli"
+print(soldier_two.armor)
+# prints "5"
+print(soldier_two.num_weapons)
+# prints "1"
+
+
